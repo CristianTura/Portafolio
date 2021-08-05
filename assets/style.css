@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+body{
+  font-family: 'Quicksand', sans-serif;
+}
+ul {
+  list-style: none;
+}
+header {
+  position: fixed;
+  background-color: #3B3B3B;
+  z-index: 99999;
+}
+header .menu {
+  background-color: #EB8D00;
+}
+header .menu li a{
+  font-size: 25px;
+  color: #fff;
+}
+@media (max-width:1199px) {
+  header .menu li a{
+    font-size: 20px;
+  }
+}
+main {
+  padding-top: 102px;
+}
+main .redes img {
+  width: 20px;
+  margin-right: 10px;
+}
+main .redes a {
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+button{
+  background-color: #EB8D00;
+  border: none;
+  color: #fff;
+}
+a{
+  text-decoration: none;
+  display: inline-block;
+  font-weight: bold;
+}
+main .myprojects button{
+  background-color: #3B3B3B;
+}
+.fig1 {
+  top: 102px;
+  width: 100%;
+  height: 340px;
+  background-color: #3B3B3B;
+  background-size: 20px;
+  z-index: 1;
+}
+.fig2 {
+  width: 100%;
+  height: 0px;
+  border-left: 99vw solid transparent;
+  border-top: 200px solid #3B3B3B;
+  z-index: 1;
+}
+.fig3 {
+  bottom: 494px;
+  width: 100%;
+  height: 0px;
+  border-right: 99vw solid transparent;
+  border-bottom: 200px solid #3B3B3B;
+  z-index: 1;
+}
+.fig4 {
+  width: 100%;
+  background-color: #3B3B3B;
+}
+.slider img {
+  width: 500px;
+}
+#right-arrow{
+  width: 60px;
+  position: relative;
+  top: -130px;
+  left: 87.6vw;
+  background-color: #3B3B3B;
+}
+#left-arrow{
+  width: 60px;
+  position: relative;
+  top: -130px;
+  right: 11vw;
+  background-color: #3B3B3B;
+}
