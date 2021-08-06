@@ -11,8 +11,8 @@ function filename(){
     let rutaRelativa = rutaAbsoluta.substring( posicionUltimaBarra + "/".length , rutaAbsoluta.length );
     return rutaRelativa;  
 }
-
-if (filename == 'index.html'){
+console.log(filename())
+if (filename == 'index.html#' || 'index.html#my-projects'){
 
     arrowRight.addEventListener('click', ()=> {
         slider.scrollLeft += slider.offsetWidth
