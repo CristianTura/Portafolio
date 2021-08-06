@@ -18,13 +18,104 @@ header .menu li a{
   font-size: 25px;
   color: #fff;
 }
+header .logoT2 {
+  display: none;
+}
+header .logoT3 {
+  display: none;
+}
+header .burger {
+  display: none;
+  width: 30px;
+  color: #fff;
+}
+header .close  {
+  height: 30px;
+  color: #000;
+  display: none;
+}
+
+/* -------------------Responsive del menu---------------- */
+
+
 @media (max-width:1199px) {
   header .menu li a{
     font-size: 20px;
   }
 }
+@media (max-width:414px) {
+  header .logo {
+    display: none;
+  }
+  header .menu {
+    width: 90vw;
+    margin: auto;
+  }
+  header nav {
+      width: 0;
+  }
+  header .menu ul{ 
+    display: none;
+  }
+  header .logoT2 {
+    display: inline-block;
+    margin: auto;
+  }
+  header .burger {
+    display: inline-block;
+  }
+
+  /* -----------menu desplegable-------- */
+  header.visible {
+    background-color: white;
+  }
+  header.visible .menu ul{
+    display: grid;
+    margin: auto;
+  }
+  header.visible nav {
+    width: 95vw;
+  }
+  header.visible .logoT2 {
+    display: none;;
+  }
+  header.visible .logoT3 {
+    display: inline-block;
+    margin: auto;
+  }
+  header.visible .close  {
+    position: absolute;
+    display: inline-block;
+    top: 30px;
+    left: 30px;
+    z-index: 100;
+  }
+  header.visible .burger {
+    display: none;
+  }
+  header.visible .menu {
+    width: 100vw;
+    background-color: #fff;
+  }
+  header.visible .menu li {
+    border-bottom: 1px solid #EB8D00;
+    margin-top: 10px;
+    z-index: 50;
+  }
+  header.visible .menu li a{
+    color: black;
+  }
+  main.visible {
+    display: none;
+  }
+  footer.visible{
+    display: none;
+  }
+}
+
+/* ------------estilos complementarios del main---------- */
 main {
-  padding-top: 102px;
+  padding-top: 101px;
 }
 main .redes img {
   width: 20px;
@@ -48,34 +139,34 @@ main .myprojects button{
   background-color: #3B3B3B;
 }
 .fig1 {
-  top: 102px;
-  width: 100%;
   height: 340px;
   background-color: #3B3B3B;
-  background-size: 20px;
-  z-index: 1;
 }
 .fig2 {
   width: 100%;
   height: 0px;
   border-left: 99vw solid transparent;
-  border-top: 200px solid #3B3B3B;
+  border-top: 170px solid #3B3B3B;
   z-index: 1;
 }
 .fig3 {
   bottom: 494px;
   width: 100%;
-  height: 0px;
   border-right: 99vw solid transparent;
-  border-bottom: 200px solid #3B3B3B;
+  border-bottom: 170px solid #3B3B3B;
   z-index: 1;
 }
-.fig4 {
-  width: 100%;
-  background-color: #3B3B3B;
+main .skills .contain img{
+  height: 30px;
+}
+main .skills .contain p{
+  font-size: 1.3rem;
 }
 .slider img {
   width: 500px;
+}
+main .myprojects .description{
+  font-size: 1.1rem;
 }
 #right-arrow{
   width: 60px;
@@ -90,4 +181,107 @@ main .myprojects button{
   top: -130px;
   right: 11vw;
   background-color: #3B3B3B;
+}
+
+/* -------------------Responsive del main---------------- */
+
+@media (max-width:414px) {
+  main {
+    padding-top: 95px;
+  }
+  .fig1 {
+    height: 735px;
+    background-color: #3B3B3B;
+  }
+  .fig2 {
+    border-top: 50px solid #3B3B3B;
+  }
+  .foto img {
+    width: 600px;
+  }
+  .educacion {
+    padding-left: 30px;
+  }
+  .skills{
+    padding:0 30px;
+  }
+  main .skills .contain p{
+    font-size: 1rem;
+  }
+  main .skills .contain img{
+    height: 20px;
+  }
+  main .myprojects .description{
+    font-size: 1rem;
+  }
+  main .myprojects .h2{
+    font-size: 20px;
+  }
+  main .myprojects .contain {
+    align-items: center;
+  }
+  #right-arrow{
+    width: 40px;
+    top: -120px;
+    left: 85.6vw;
+    background-color: #3B3B3B;
+  }
+  #left-arrow{
+    width: 40px;
+    top: -120px;
+    right: 14vw;
+    background-color: #3B3B3B;
+  }
+}
+
+.fig4 {
+  width: 100%;
+  background-color: #3B3B3B;
+}
+.fig5 {
+  width: 100%;
+  height: 200px;
+  background-color: #3B3B3B;
+}
+
+/* -------------------Responsive del footer---------------- */
+@media (max-width:414px) {
+  .fig3 {
+    border-bottom: 50px solid #3B3B3B;
+  }
+  footer .contacto {
+    padding-left: 30px;
+  }
+  footer .email p{
+    font-size: 16px;
+  }
+  footer .whatsapp p{
+    font-size: 16px;
+  }
+  footer .linkedin p{
+    font-size: 16px;  
+  }
+  footer .linkedin {
+    margin-bottom: 50px;
+  }
+  footer .copyright p{
+    font-size: 14px;
+    padding: 15px;
+  }
+}
+
+/* -------------------Responsive página de contacto---------------- */
+main .form button {
+  width: 200px;
+}
+@media (max-width:414px) {
+  main .form {
+    margin-top: 30px;
+  }
+  main .form label {
+    font-size: 18px;
+  }
+  main .form button {
+    width: 100px;
+  }
 }

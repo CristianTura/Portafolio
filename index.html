@@ -10,53 +10,56 @@
             integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
             crossorigin="anonymous"
         />
-        <link rel="stylesheet" href="assets/font-awesome.min.css">
         <link rel="stylesheet" href="./assets/style.css">
         <title>Cristian Buenaventura</title>
     </head>
     <body>
-        <header class="position-fixed w-100">
-            <div >
-                <div class=" container ">
-                    <div class="row py-4 d-flex justify-content-between">
-                        <div class="logo col-lg-2 col-md-3">
-                            <a href="#"><img class="w-50" src="./assets/img/logoT1.png" alt="Logo"></a>
-                            
-                        </div>
-                        <div class="menu col-lg-8 col-md-8 rounded-pill d-flex justify-content-center">
-                            <nav class="navbar navbar-expand py-0">
-                                <div class="container">
-                                    <div class="collapse navbar-collapse">
-                                        <ul class="list navbar-nav">
-                                            <li class="nav-item"><a class="nav-link font-weight-bold" hxef="#">Sobre mi</a></li>
-                                            <li class="nav-item mx-lg-5 mx-md-2"><a class="nav-link ont-weight-bold" href="#">Proyectos</a></li>
-                                            <li class="nav-item "><a class="nav-link ont-weight-bold" href="#">Contacto</a></li>
-                                        </ul>
-                                    </div>
-                                    
+        <header class="w-100" id="header">
+            <div class=" container ">
+                <div class="row py-4 d-flex justify-content-between">
+                    <div class="logo col-lg-2 col-md-3">
+                        <a href="#"><img class="w-50" src="./assets/img/logoT1.png" alt="Logo"></a>
+                    </div>
+                    <div class="menu col-lg-8 col-md-8 rounded-pill d-flex justify-content-center align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 burger" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                        <svg id="close" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 close" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                        <a class="logoT2" href="#"><img class="my-2" src="./assets/img/logoT2.png" alt="Logo" style="width: 50px;"></a>
+                        <nav class="navbar navbar-expand py-0">
+                            <div class="container">
+                                <div class=" navbar-collapse">
+                                    <ul class="list navbar-nav">
+                                        <a class="logoT3" href="#"><img class="my-2" src="./assets/img/logoT3.png" alt="Logo" style="width: 70px;"></a>
+                                        <li class="nav-item"><a class="nav-link font-weight-bold" href="#">Sobre mi</a></li>
+                                        <li class="nav-item mx-lg-5 mx-md-2"><a class="nav-link ont-weight-bold" href="#my-projects">Proyectos</a></li>
+                                        <li class="nav-item "><a class="nav-link font-weight-bold" href="./contacto.html" >Contacto</a></li>
+                                    </ul>
                                 </div>
                                 
-                            </nav>
-                        </div>
+                            </div>
+                            
+                        </nav>
                     </div>
-                    </div>
+                </div>
             </div>
-                
         </header>
-        <main>
+        <main id="main">
             <section class="about-me ">
                 <div class="fig1">            
                     <div class="container">
                         <div class="row d-flex justify-content-around">
-                            <div class="col-lg-4 my-5 mb-0">
-                                <p class="text-white h5 py-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate minus exercitationem aspernatur. Enim fugiat blanditiis quos vel facilis adipisci rerum repellat, alias doloribus ab quidem corrupti aut ad dolorum deserunt.</p>
+                            <div class="col-lg-5 col-sm-12 my-lg-5 mb-0">
+                                <p class="text-white h5 px-2 py-3" id="about-me">Soy una persona que le gusta tomar retos y sacar provecho de ellos lo mayor posible. Me considero una persona comprometida y responsable con todo aquello que he decidido tomar iniciativa. Me gusta el mundo de la programación y todos los días me esfuerzo en aprender algo nuevo.</p>
                                 <div class="contents d-flex flex-row align-items-center justify-content-between">
-                                    <div class="boton my-5">
-                                        <button type="button" class="rounded-pill p-md-2 p-sm-1">
+                                    <div class="boton my-lg-5 px-2 my-xs-3">
+                                        <button type="button" class="rounded-pill p-2">
                                             <a class="text-white font-weight-bold" href="#">Mis Proyectos</a>
                                         </button>
                                     </div>
-                                    <div class="redes my-4">
+                                    <div class="redes my-lg-4 px-2">
                                         <div class="github my-2 d-flex align-items-center">
                                             <img  src="./assets/img/github.png" alt="Github">
                                             <a class="text-white" href="#">GitHub</a>
@@ -66,11 +69,9 @@
                                             <a class="text-white" href="#">Linkedin</a>
                                         </div>
                                     </div>
-                                    
-
                                 </div>
                             </div>
-                            <div class="col-lg-4 col-sm-3 mx-5 my-3 mb-0">
+                            <div class="col-lg-4 col-sm-6 mx-5 my-3 mb-0 px-1 foto">
                                 <img class="w-100"  src="./assets/img/foto.jpeg" alt="Foto">
                             </div>
                         </div>
@@ -81,95 +82,95 @@
             <section class="info-me my-5">
                 <div class="container">
                     <div class="row d-flex justify-content-around">
-                        <div class="col-4 mt-0">
+                        <div class="col-lg-4 mt-0 mb-5 educacion">
                             <p class="h2 mb-4" style="font-weight: bold; ">Educación</p>
                             <p class="mb-0" style="font-weight: bold; font-size: 1.3rem">Fundación Educamás</p>
                             <p class="mb-0">En curso</p>
                             <p style="font-weight: bold; font-size: 1.3rem;">Desarrollador Fullstack</p>
                         </div>
-                        <div class="col-4 mt-0">
+                        <div class="col-lg-4 mt-0 skills">
                             <p class="h2 mb-4" style="font-weight: bold;">Skills</p>
-                            <div class="html d-flex flex-row align-items-center justify-content-between">
-                                <p class="mb-0" style="font-weight: bold; font-size: 1.3rem;">HTML</p>   
+                            <div class="html d-flex flex-row align-items-center justify-content-between contain">
+                                <p class="mb-0" style="font-weight: bold;">HTML</p>   
                                 <div>
-                                    <img  style="height: 30px;" src="./assets/img/skill4.png" alt="capacidad"> 
+                                    <img src="./assets/img/skill4.png" alt="capacidad"> 
                                 </div>
                                                 
                             </div>
-                            <div class="html d-flex flex-row align-items-center mt-3 justify-content-between">
-                                <p class="mb-0" style="font-weight: bold; font-size: 1.3rem;">CSS</p>                     
-                                <img style="height: 30px;" src="./assets/img/skill4.png" alt="capacidad">
+                            <div class="html d-flex flex-row align-items-center mt-3 justify-content-between contain">
+                                <p class="mb-0" style="font-weight: bold;">CSS</p>                     
+                                <img  src="./assets/img/skill4.png" alt="capacidad">
                             </div>
-                            <div class="html d-flex flex-row align-items-center mt-3 justify-content-between">
-                                <p class="mb-0" style="font-weight: bold; font-size: 1.3rem;">BOOTSTRAP</p> 
+                            <div class="html d-flex flex-row align-items-center mt-3 justify-content-between contain">
+                                <p class="mb-0" style="font-weight: bold;">BOOTSTRAP</p> 
                                 <div>
-                                    <img style="height: 30px;" src="./assets/img/skill2.png" alt="capacidad">
+                                    <img " src="./assets/img/skill2.png" alt="capacidad">
                                 </div>                    
                                 
                             </div>
-                            <div class="html d-flex flex-row align-items-center mt-3 justify-content-between">
-                                <p class="mb-0" style="font-weight: bold; font-size: 1.3rem;">JAVASCRIPT</p>                     
-                                <img style="height: 30px;" src="./assets/img/skill3.png" alt="capacidad">
+                            <div class="html d-flex flex-row align-items-center mt-3 justify-content-between contain">
+                                <p class="mb-0" style="font-weight: bold;">JAVASCRIPT</p>                     
+                                <img " src="./assets/img/skill3.png" alt="capacidad">
                             </div>
-                            <div class="html d-flex flex-row align-items-center mt-3 justify-content-between">
-                                <p class="mb-0" style="font-weight: bold; font-size: 1.3rem;">PYTHON</p>                     
-                                <img style="height: 30px;" src="./assets/img/skill2.png" alt="capacidad">
+                            <div class="html d-flex flex-row align-items-center mt-3 justify-content-between contain">
+                                <p class="mb-0" style="font-weight: bold;">PYTHON</p>                     
+                                <img " src="./assets/img/skill2.png" alt="capacidad">
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="myprojects py-5">
-                <div class="container py-5">
-                    <p class="h1 text-center mb-5" style="font-weight: bold;">Mis Proyectos</p>
-                    <div class="row py-5 d-flex justify-content-between">
+            <section class="myprojects py-lg-5">
+                <div class="container py-lg-5">
+                    <p id="my-projects" class="h1 text-center mb-5" style="font-weight: bold;">Mis Proyectos</p>
+                    <div class="row py-lg-5 d-flex justify-content-between">
                         <div class="col-lg-7 ">
                             <img class="w-100" style="width: 300px;" src="./assets/img/onePunch.png" alt="One Punch Man">
                         </div>
-                        <div class="col-4">
+                        <div class="col-lg-4">
                             <div class="contain py-3  d-flex flex-column ">
-                                <p class="h2 py-2" style="font-weight: bold;">One Punch Man</p>
-                                <p class="py-3" style="font-weight: bold; font-size: 1.1rem;">Un tributo a un anime bastante divertido donde puedes encontar datos y capitulos del anime.</p>
+                                <p class="h2 py-lg-2" style="font-weight: bold;">One Punch Man</p>
+                                <p class="py-lg-3 description" style="font-weight: bold; ">Un tributo a un anime bastante divertido donde puedes encontar datos y capitulos del anime.</p>
                                 <button type="button" class="rounded-pill p-lg-2 p-sm-1 mx-3 w-50"><a class="text-white font-weight-bold" href="#">Ver Página</a></button>
                             </div>
                         </div>
                     </div>
-                    <div class="row py-5 d-flex justify-content-between">
-                        
-                        <div class="col-4">
+                    <div class="row py-5 d-flex flex-row-reverse justify-content-between">
+                        <div class="col-lg-7">
+                            <img class="w-100" style="width: 300px;" src="./assets/img/vacaciones.png" alt="Planea tus vaciones">
+                        </div>
+                        <div class="col-lg-4">
                             <div class="contain py-3  d-flex flex-column ">
-                                <p class="h2 py-2" style="font-weight: bold;">Planea Tus Vacaciones</p>
-                                <p class="py-3" style="font-weight: bold; font-size: 1.1rem;">Aplicación para calcular los gastos según el destino, tipo de transporte y hospedaje.</p>
+                                <p class="h2 py-lg-2" style="font-weight: bold;">Planea Tus Vacaciones</p>
+                                <p class="py-lg-3 description" style="font-weight: bold; ">Aplicación para calcular los gastos según el destino, tipo de transporte y hospedaje.</p>
                                 <button type="button" class="rounded-pill p-lg-2 p-sm-1 mx-3 w-50"><a class="text-white font-weight-bold" href="#">Ver Página</a></button>
                             </div>
                         </div>
-                        <div class="col-lg-7 ">
-                            <img class="w-100" style="width: 300px;" src="./assets/img/vacaciones.png" alt="One Punch Man">
-                        </div>
+                        
                     </div>
                 </div>   
-                <div class="container">
+                <div class="container my-5">
                     <p class="h1 text-center mb-5" style="font-weight: bold;">Retos JavaScript</p>
                     <div class="row slider d-flex flex-nowrap overflow-hidden" style="background-color: #3B3B3B; padding: 20px 0px;">
-                        <div class="col-4">
+                        <div class="col-lg-4 ">
                             <a href="#"><img class="w-100" src="./assets/img/reto1.png" alt="Reto 1"></a>
                         </div>
-                        <div class="col-4">
+                        <div class="col-lg-4">
                             <a href="#"><img class="w-100" src="./assets/img/reto2.png" alt="Reto 1"></a>
                         </div>
-                        <div class="col-4">
+                        <div class="col-lg-4">
                             <a href="#"><img class="w-100" src="./assets/img/reto3.png" alt="Reto 1"></a>
                         </div>
-                        <div class="col-4">
+                        <div class="col-lg-4">
                             <a href="#"><img class="w-100" src="./assets/img/reto4.png" alt="Reto 1"></a>
                         </div>
-                        <div class="col-4">
+                        <div class="col-lg-4">
                             <a href="#"><img class="w-100" src="./assets/img/reto5.png" alt="Reto 1"></a>
                         </div>
-                        <div class="col-4">
+                        <div class="col-lg-4">
                             <a href="#"><img class="w-100" src="./assets/img/reto6.png" alt="Reto 1"></a>
                         </div>
-                        <div class="col-4">
+                        <div class="col-lg-4">
                             <a href="#"><img class="w-100" src="./assets/img/reto7.png" alt="Reto 1"></a>
                         </div>
                                 
@@ -189,14 +190,14 @@
                 </div>
             </section>
         </main>
-        <footer>
+        <footer id="footer">
             <div class="fig3"></div>
             <div class="fig4">            
                 <div class="container">
                     <div class="row d-flex justify-content-between">
-                        <div class="col-6 my-2">
+                        <div class="col-lg-6 my-2 contacto">
                             <p class="text-white h4 py-3" style="font-weight: bold;">Enviame un mensaje</p>
-                            <button type="button" class="rounded-pill p-md-2 p-sm-1 w-25">
+                            <button type="button" class="rounded-pill p-2  w-25">
                                 <a class="text-white font-weight-bold" href="#">Contacto</a>
                             </button>
                         </div>
@@ -207,20 +208,20 @@
                                   </svg>
                                 <p class="text-white h5 mb-0" style="font-weight: bold;">E-mail</p>
                             </div>
-                            <div class="email d-flex flex-row align-items-center my-3">
+                            <div class="whatsapp d-flex flex-row align-items-center my-3">
                                 <svg style="color: white;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp mx-4" viewBox="0 0 16 16">
                                     <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
                                   </svg>
                                 <p class="text-white h5 mb-0" style="font-weight: bold;">Whatsapp</p>
                             </div>
-                            <div class="email d-flex flex-row align-items-center my-3">
+                            <div class="linkedin d-flex flex-row align-items-center my-lg-3">
                                 <img class="mx-4" src="./assets/img/linkedin.png" alt="Linkedin" style="width: 20px;">
                                 <p class="text-white h5 mb-0" style="font-weight: bold;">Linkenid</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="copyright p-4 mt-5" style="border-top: 1px solid white;">
+                <div class="copyright p-lg-4 mt-lg-5" style="border-top: 1px solid white;">
                     <p class="text-white text-center mb-0">&copy; Copyright 2021 - Página creada por Cristian Buenaventura</p>
                 </div>
             </div>
