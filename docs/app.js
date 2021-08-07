@@ -12,7 +12,7 @@ function filename(){
     return rutaRelativa;  
 }
 console.log(filename())
-if (filename() == 'index.html' || filename() == 'index.html#my-projects'){
+if (filename() == 'index.html' || filename() == 'index.html#' || filename() == 'index.html#my-projects'){
 
     arrowRight.addEventListener('click', ()=> {
         slider.scrollLeft += slider.offsetWidth
