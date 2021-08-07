@@ -56,9 +56,6 @@ for (let i=0; i<menuElem.length; i++) {
 
 // ----------------Envío de correo--------------
 
-(function() {
-    emailjs.init("user_zBoj5z1K90Ujly6NVFJn8");
-    })();
 
 window.onload = function() {
     document.getElementById('contact-form').addEventListener('submit', function(e) {
