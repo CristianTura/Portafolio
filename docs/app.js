@@ -12,7 +12,7 @@ function filename(){
     return rutaRelativa;  
 }
 console.log(filename())
-if (filename == 'index.html#' || 'index.html#my-projects'){
+if (filename == 'index.html#' || filename == 'index.html#my-projects'){
 
     arrowRight.addEventListener('click', ()=> {
         slider.scrollLeft += slider.offsetWidth
@@ -52,4 +52,25 @@ for (let i=0; i<menuElem.length; i++) {
     })
 }
 
+
+
+// ----------------Envío de correo--------------
+
+(function() {
+    emailjs.init("user_zBoj5z1K90Ujly6NVFJn8");
+    })();
+
+window.onload = function() {
+    document.getElementById('contact-form').addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        emailjs.sendForm('service_843fwul',"template_46bbgcd" ,'#contact-form', 'user_zBoj5z1K90Ujly6NVFJn8')
+            .then(function() {
+                console.log('SUCCESS!');
+            }, function(error) {
+                console.log('FAILED...', error);
+            });
+            e.target.reset();
+    });
+}
 
