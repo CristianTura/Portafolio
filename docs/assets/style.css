@@ -163,6 +163,18 @@ main .skills .contain img{
 main .skills .contain p{
   font-size: 1.3rem;
 }
+.skHtml .skill1,.skHtml  .skill2,.skHtml  .skill3,.skHtml  .skill4, .skCss .skill1,.skCss  .skill2,.skCss  .skill3,.skCss  .skill4, .skBt .skill1,.skBt  .skill2,.skBt  .skill3, .skJs .skill1,.skJs  .skill2,.skJs  .skill3,.skJs  .skill4, .skPy .skill1,.skPy .skill2, .skRc .skill1,.skRc .skill2, .skAn .skill1,.skAn .skill2{
+  width: 30px;
+  height: 30px;
+  background-color: #EB8D00;
+  border-radius: 50%;
+}
+.skHtml .skill5, .skCss  .skill5, .skBt  .skill4, .skBt  .skill5, .skJs  .skill5, .skPy .skill3, .skPy  .skill4, .skPy .skill5, .skRc .skill3, .skRc  .skill4, .skRc .skill5, .skAn .skill3, .skAn  .skill4, .skAn .skill5{
+  width: 30px;
+  height: 30px;
+  background-color: #3B3B3B;
+  border-radius: 50%;
+}
 .slider img {
   width: 500px;
 }
