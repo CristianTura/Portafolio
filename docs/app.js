@@ -57,7 +57,8 @@ for (let i=0; i<menuElem.length; i++) {
 // ----------------Envío de correo--------------
 
 if (filename() == 'contacto.html' ){
-window.onload = function() {
+    
+    window.onload = function() {
     document.getElementById('contact-form').addEventListener('submit', function(e) {
         e.preventDefault();
 

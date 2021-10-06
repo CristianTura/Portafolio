@@ -10,12 +10,16 @@ header {
   position: fixed;
   background-color: #3B3B3B;
   z-index: 99999;
+  transition: 1s 0s all ease;
 }
 header .menu {
   background-color: #EB8D00;
 }
 header .menu li a{
   font-size: 25px;
+  color: #fff;
+}
+header .menu li a:hover, header .menu li a:active{
   color: #fff;
 }
 header .logoT2 {
@@ -116,6 +120,7 @@ header .close  {
 /* ------------estilos complementarios del main---------- */
 main {
   padding-top: 101px;
+
 }
 main .redes img {
   width: 20px;
@@ -177,6 +182,9 @@ main .skills .contain p{
 }
 .slider img {
   width: 500px;
+}
+main .title-projects{
+  border-bottom: 3px solid #EB8D00;
 }
 main .myprojects .description{
   font-size: 1.1rem;
@@ -256,6 +264,14 @@ main .myprojects .description{
   height: 200px;
   background-color: #3B3B3B;
 }
+footer .social .fa-linkedin{
+  color: #fff;
+  font-size: 18px;
+  margin-right: 24px;
+}
+/* footer .copyright text-copy{
+  text-align: right;
+} */
 
 /* -------------------Responsive del footer---------------- */
 @media (max-width:414px) {
